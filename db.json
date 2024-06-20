@@ -1,0 +1,58 @@
+{
+    "menus": [
+      {
+        "id": 1,
+        "name": "Home",
+        "order": 1,
+        "path": "",
+        "permissions": ["user", "admin"],
+        "submenus": []
+      },
+      {
+        "id": 2,
+        "name": "About",
+        "order": 2,
+        "path": "about",
+        "permissions": ["user", "admin"],
+        "submenus": [
+          {
+            "id": 3,
+            "name": "Company",
+            "order": 2,
+            "path": "about/company",
+            "permissions": ["admin"]
+          },
+          {
+            "id": 4,
+            "name": "Team",
+            "order": 1,
+            "path": "about/team",
+            "permissions": ["user"]
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Services",
+        "order": 3,
+        "path": "services",
+        "permissions": ["user", "admin"],
+        "submenus": [
+          {
+            "id": 6,
+            "name": "Web Development",
+            "order": 1,
+            "path": "services/web-development",
+            "permissions": ["admin"]
+          },
+          {
+            "id": 7,
+            "name": "SEO",
+            "order": 2,
+            "path": "services/seo",
+            "permissions": ["user"]
+          }
+        ]
+      }
+    ]
+  }

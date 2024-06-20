@@ -1,0 +1,12 @@
+<nav>
+    <ul>
+      <li *ngFor="let menu of menus">
+        <a [routerLink]="['/', menu.path]">{{ menu.name }}</a>
+        <ul *ngIf="menu.submenus && menu.submenus.length > 0">
+          <li *ngFor="let submenu of menu.submenus">
+            <a [routerLink]="['/', submenu.path]">{{ submenu.name }}</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
